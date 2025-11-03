@@ -1,7 +1,7 @@
 .logo-img {
     width: auto;       /* tamanho padrão para desktop */
     height: auto;       /* mantém proporção */
-    max-width: 100%;    /* não ultrapassa o container */
+    max-width: 150%;    /* não ultrapassa o container */
 }
 
 /* Ajuste para telas menores (mobile) */

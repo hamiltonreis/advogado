@@ -16,15 +16,15 @@
 }
 
 .img-sobre {
-  width: 40%;
+  width: 35%;
   height: 400px;
   background-image: url("../../media/escr.jpg");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  position: absolute;
+  /* position: absolute;
   right: 0;
-  top: 12%;
+  top: 12%; */
 }
 
 @media (max-width: 1080px) {
