@@ -1,0 +1,18 @@
+.logo-img {
+    width: auto;       /* tamanho padrão para desktop */
+    height: auto;       /* mantém proporção */
+    max-width: 100%;    /* não ultrapassa o container */
+}
+
+/* Ajuste para telas menores (mobile) */
+@media (max-width: 768px) {
+    .logo-img {
+        width: 120px;   /* menor em tablets e celulares */
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-img {
+        width: 100px;   /* ainda menor para smartphones */
+    }
+}
