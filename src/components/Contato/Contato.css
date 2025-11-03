@@ -110,6 +110,10 @@ form input[type="submit"]:active {
 
 form input[type="submit"]:disabled {
   background-color: rgb(160, 160, 160);
+  cursor: not-allowed;;
+}
+
+form input[type="submit"].submitting {
   cursor: wait;
 }
 
@@ -122,10 +126,12 @@ form input[type="submit"]:disabled {
 
 #msg-sended {
   color: rgb(134, 204, 134);
+  display: none;
 }
 
 #msg-error {
   color: rgb(231, 141, 141);
+  display: none;
 }
 
 @media (max-width: 768px) {
