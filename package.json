@@ -13,7 +13,7 @@
     "styled-components": "^5.3.1",
     "web-vitals": "^1.1.2"
   },
-  "homepage": "https://www.hamiltonreis.com.br",
+  "homepage": "https://hamiltonreis.github.io/hamiltonreisadvogado",
   "scripts": {
     "start": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts start",
     "build": "NODE_OPTIONS=--openssl-legacy-provider npx react-scripts build",
