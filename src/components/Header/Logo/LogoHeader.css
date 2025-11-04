@@ -5,7 +5,7 @@
 
   /* Centraliza a imagem verticalmente */
   /* (190px da imagem - 115px do header) / 2 = 37.5px */
-  margin-top: -10px;
+  margin-top: -70px;
   
   max-width: 100%; /* Mantém o limite */
 }
