@@ -1,14 +1,13 @@
 // Importações atualizadas
 import React, { useState } from 'react';
-import { FaWhatsapp, FaHeadset, FaMapMarkerAlt } from "react-icons/fa";
+import { FaWhatsapp, FaHeadset, FaMapMarkerAlt, FaGlobe } from "react-icons/fa";
 import Mask from '../../modules/phonemask';
 
 import './Contato.css';
 
 const Contato = () => {
 
-    // --- TODA A SUA LÓGICA DE STATE E FUNÇÕES (PERFEITA) ---
-    // --- NÃO FOI ALTERADA ---
+    // --- TODA A SUA LÓGICA DE STATE E FUNÇÕES (INTACTA) ---
     const [formData, setFormData] = useState({
         nome: '', email: '', telefone: '',
         assunto: '', mensagem: ''
@@ -77,7 +76,7 @@ const Contato = () => {
     // --- FIM DA LÓGICA ---
 
 
-    // --- INÍCIO DO JSX (AQUI FIZEMOS AS MUDANÇAS) ---
+    // --- INÍCIO DO JSX ---
     return (
         <section className="contato" id="anchor-contato">
             <div className="container">
@@ -97,7 +96,7 @@ const Contato = () => {
                                 <span>Plantão 24h</span>
                             </div>
                             
-                            {/* Link do WhatsApp (o seu já estava bom) */}
+                            {/* Link do WhatsApp */}
                             <a
                                 href="https://wa.me/5584988261791"
                                 target="_blank"
@@ -108,27 +107,31 @@ const Contato = () => {
                                 (84) 98826-1791
                             </a>
                             
-                            {/* Bloco de Endereço */}
-                            <h2 className="titulo-endereco">Localização</h2>
+                            {/* Bloco de Área de Atuação */}
+                            <h2 className="titulo-endereco">Área de Atuação</h2>
+                            
+                            {/* Bloco 1: Atendimento Local */}
                             <div className="endereco-box">
                                 <FaMapMarkerAlt className="map-icon" />
                                 <p>
-                                    Av. Maranhão, 555. Bairro dos Estados.<br/>
-                                    CEP 58.030-260. João Pessoa/PB
+                                    <strong>Atendimento Presencial</strong><br/>
+                                    Em toda João Pessoa - PB e região metropolitana.
                                 </p>
                             </div>
-                            <a
-                                href="https://www.google.com/maps/place/Av.+Maranh%C3%A3o,+555+-+Bairro+dos+Estados,+Jo%C3%A3o+Pessoa+-+PB,+58030-260" // Link corrigido da outra vez
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="maps-link"
-                            >
-                                ➜ Ver rota no Google Maps
-                            </a>
-                        </div>
-                        {/* O mapa continua o mesmo */}
+
+                            {/* Bloco 2: Atendimento Nacional */}
+                            <div className="endereco-box">
+                                <FaGlobe className="map-icon" />
+                                <p>
+                                    <strong>Atendimento Nacional</strong><br/>
+                                    Atuação remota e presencial em todo o Brasil.
+                                </p>
+                            </div>
+                        </div> {/* Fim de .dados-contato */}
+                        
                         <div className="mapa"></div>
-                    </div>
+                    
+                    </div> {/* <-- ESTA É A DIV QUE FALTAVA (FECHAMENTO DO .contato-left) */}
                     
                     {/* --- LADO DIREITO (FORMULÁRIO) --- */}
                     <div className="contato-right">
