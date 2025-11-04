@@ -1,11 +1,11 @@
 .logo-img {
   /* Trocamos de 'auto' para uma altura fixa MAIOR que o header */
-  height: 190px;
+  height: 250px;
   width: auto; /* Mantém a proporção quadrada */
 
   /* Centraliza a imagem verticalmente */
   /* (190px da imagem - 115px do header) / 2 = 37.5px */
-  margin-top: -37.5px;
+  margin-top: -10px;
   
   max-width: 100%; /* Mantém o limite */
 }

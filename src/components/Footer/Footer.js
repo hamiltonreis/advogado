@@ -52,9 +52,6 @@ const Footer = () => {
                                 <a target="_blank" href="https://www.mp.pb.gov.br/" rel="noreferrer">Ministério Público da Paraíba</a>
                             </li>
                             <li>
-                                <a target="_blank" href="http://www.defensoria.pb.def.br/" rel="noreferrer">Defensoria Pública da Paraíba</a>
-                            </li>
-                            <li>
                                 <a target="_blank" href="https://www.tjpb.jus.br/" rel="noreferrer">Tribunal de Justiça da Paraíba</a>
                             </li>
                             {/* Link quebrado 'juizdefora' removido. Se precisar, pode adicionar outro. */}
